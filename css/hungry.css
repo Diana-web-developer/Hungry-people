@@ -1,0 +1,786 @@
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+h2,
+p,
+a,
+span,
+h3,
+button {
+	font-family: 'Montserrat';
+    line-height: 2;
+}
+h2 {
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-size: 36px;
+}
+
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+}
+
+body {
+    line-height: 1;
+    font-family: "";
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+input,
+button,
+textarea {
+}
+textarea.form__input {
+    min-height: 120px;
+    width: 100%;
+    resize: vertical;
+    line-height: 4;
+}
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+html,
+body {
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#button-up {
+    display: none;
+    right: 16px;
+    margin: 0;
+    position: fixed;
+    bottom: 50px;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    background-color: #e8c300;
+    line-height: 30px;
+    text-decoration: none;
+    padding: 0;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    z-index: 4;
+    cursor: pointer;
+}
+.fullscreen {
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    /* padding: 20px 0; */
+}
+.fullscreen_one {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.fullscreen__body {
+    flex: 1 1 auto;
+    width: 100%;
+    /* max-width: 1300px; */
+    margin: 0px auto;
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px 20px 30px;
+    /* position: fixed; */
+    z-index: 50000;
+    width: 100%;
+}
+.menu-left,
+.menu-right {
+    color: white;
+    flex: 0 1 45%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+.menu-left a {
+    color: white;
+}
+.menu-right a {
+    color: white;
+}
+.for-logo-for-tablet {
+    display: none;
+}
+.for-logo li {
+    /* flex: 0 1 10%;
+    margin-top: 0; */
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 72vh;
+}
+.vertical {
+    flex: 0 1 10%;
+    /* height: 100%;  */
+    max-width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.time {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-size: 12px;
+}
+.main-content {
+    flex: 0 1 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+}
+.restaurant {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.line {
+    width: 70px;
+    height: 2px;
+    background-color: #e8c300;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+.two-buttons {
+    margin-bottom: 20px;
+    display: flex;
+}
+.book {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #e8c300;
+    min-width: 200px;
+    margin-right: 40px;
+}
+.book:hover {
+    transform: scale(1.02);
+}
+.for-icon:hover {
+    transform: scale(1.1);
+}
+.explore {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    min-width: 200px;
+}
+.explore:hover {
+    transform: scale(1.02);
+}
+.button-down {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-down:hover {
+    box-shadow: 0 0 7px white;
+}
+.arrow-down {
+}
+.for-nets {
+    flex: 0 1 10%;
+    max-width: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.for-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.for-icon img {
+    width: 100%;
+}
+.for-fb {
+    width: 30px;
+    height: 30px;
+}
+.for-title img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content-in-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.about {
+    color: black;
+    flex: 0 1 60%;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 100px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.from-right {
+    transform: translate(100%, 0);
+    transition: all 1s ease 0s;
+}
+.from-right._active {
+    transform: translate(0, 0);
+    transition: all 1s ease 0s;
+}
+.from-left {
+    transform: translate(-100%, 0);
+    transition: all 1s ease 0s;
+}
+.from-left._active {
+    transform: translate(0, 0);
+    transition: all 1s ease 0s;
+}
+
+.bold {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.for-pic {
+    flex: 0 1 50%;
+    position: relative;
+}
+.for-pic img {
+    border-radius: 1%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.for-pic img {
+    padding: 10%;
+    border-radius: 1%;
+}
+.square {
+    width: 10vh;
+    height: 10vh;
+    border: 15px solid #e8c300;
+    position: absolute;
+    left: 370px;
+    top: 20vh;
+    border-radius: 5%;
+    box-shadow: 0 0 7px gray;
+}
+.three {
+    background-image: url(../img/specialtys-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.three p,
+.three h2,
+.five p,
+.five h2 {
+    color: white;
+}
+h3 {
+    color: black;
+}
+.five {
+    background-image: url(../img/specialtys-b.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.six {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.black {
+    color: black;
+    max-width: 565px;
+    text-align: center;
+}
+.black.bold {
+    margin-bottom: 50px;
+}
+/* Стиль кнопок, используемых для открытия содержимого вкладки */
+.tablinks {
+    background-color: inherit;
+    border: none;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    transition: 0.3s;
+    width: 100px;
+    text-transform: uppercase;
+}
+.tablinks-last {
+    border-right: none;
+}
+
+/* Изменить цвет фона кнопок при наведении */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Создать активный / текущий класс tablink */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+.tabcontent p {
+    color: black;
+}
+.tabcontent {
+    /* width: 100%; */
+    animation: fadeEffect 1s; /* Эффект затухания занимает 1 секунду */
+}
+
+/* Перейти от нуля до полной непрозрачности */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-pizza,
+.menu-pasta,
+.menu-desert {
+    display: flex;
+}
+.small {
+    font-size: 12px;
+}
+.menu-pizza-one-column.number1,
+.menu-pizza-one-column.number2 {
+    margin-right: 50px;
+}
+.one-pizza p {
+    text-transform: uppercase;
+}
+p.small {
+    text-transform: none;
+    line-height: 1;
+}
+.one-pizza {
+    height: 100px;
+    line-height: 1;
+}
+.half-opacity {
+    display: none;
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+    z-index: 2;
+    position: relative;
+    background-image: linear-gradient(rgb(255, 255, 255, 0), rgba(255, 255, 255), rgba(255, 255, 255));
+}
+
+.seven {
+    background-image: url(../img/specialtys-b.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.two {
+}
+.eight {
+}
+.content-in-eight {
+    display: flex;
+}
+.for-pic-in-eight {
+    flex: 0 1 25%;
+}
+.for-pic-in-eight img {
+    width: 100%;
+}
+.about.about-in-contact {
+    flex: 0 1 100%;
+    padding: 0;
+}
+
+@media (max-width: 1400px) {
+    .about,
+    .content-in-two,
+    .six {
+        padding-left: calc(10px + 100 * ((100vw - 320px) / (1440 - 320)));
+        padding: calc(10px + 100 * ((100vw - 320px) / (1440 - 320)));
+    }
+}
+
+@media (max-width: 767px) {
+    .one-pizza {
+        height: 60px;
+    }
+    .half-opacity {
+        display: block;
+    }
+    .content-in-two {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .content-in-three {
+        flex-direction: column-reverse;
+    }
+    .about {
+        flex: 0 1 100%;
+    }
+    .for-pic {
+        flex: 0 1 100%;
+        width: 70%;
+    }
+    .for-pic img {
+        top: 0;
+    }
+    .square {
+        top: 10vh;
+    }
+    .for-logo {
+        display: none;
+    }
+    .for-logo-for-tablet {
+        display: block;
+        width: 70px;
+        height: 70px;
+    }
+    .two-buttons {
+        flex-direction: column;
+    }
+    .book {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .vertical {
+        display: none;
+    }
+    .for-nets {
+        display: none;
+    }
+    #button-up {
+        /* display: none; */
+    }
+    .menu-pizza,
+    .menu-pasta,
+    .menu-desert {
+        flex-direction: column;
+        height: 300px;
+        overflow-y: auto;
+    }
+    .menu-pizza-one-column.number1,
+    .menu-pizza-one-column.number2,
+    .menu-pizza-one-column.number3 {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 375px) {
+    .one-pizza {
+        height: 90px;
+    }
+}
+
+.row > .column {
+    /* padding: 0 8px; */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row img:hover {
+    opacity: 0.6;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+.mySlides img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -0px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 10px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover {
+    transition: 0.5s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.eight img {
+    width: 100%;
+    object-fit: cover;
+}
+.for-pic {
+    position: relative;
+}
+.black-rectangle {
+    background-color: black;
+    z-index: 2;
+    text-transform: uppercase;
+    line-height: 4;
+    text-align: center;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 45%;
+    left: -26%;
+    width: 81%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: black;
+}
+.foot {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 4;
+}
+.no-transform {
+    transform: none;
+}
